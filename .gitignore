@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+get_captcha2_apikey.txt
+gptapi_key.txt
+redbubble_password.txt
+redbubble_username.txt

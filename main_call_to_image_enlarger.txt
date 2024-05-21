@@ -1,0 +1,19 @@
+from MJImage import MJImage
+
+# Image URL
+image_url = "https://cdn.discordapp.com/attachments/941582479117127680/1239463932872101950/deborah2306_Anisomorphic_Scooby_Doo_dressed_as_a_Black_pug._Mus_01bce33e-f598-4056-a75e-b75017459cf9.png?ex=66464ffd&is=6644fe7d&hm=03b6442b683c5fd017be1adac45379ace12cc1e7e4a183a7d9666f892ee46339&"
+
+# Initialize MJImage object
+mj_image = MJImage(image_url)
+
+# Describe the image
+description = mj_image.describe()
+print("Image Description:")
+print("Title:", description["title"])
+print("Tags:", description["tags"])
+print("Description:", description["description"])
+
+# Enlarge the image
+enlarged_image = mj_image.enlarge()  # Example to enlarge to ~5 MB
+enlarged_image.save("enlarged_image.png")
+print("Saved enlarged image to 'enlarged_image.png'")
